@@ -220,3 +220,10 @@ section .do-me .do-inner:hover i{
   color: white;
 }
 /* end section #features */
+.bg{
+  background: url(./images/background.jpg) center center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 650px;
+}
+/* end background */
