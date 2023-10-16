@@ -1,109 +1,119 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Varela+Round&display=swap");
-
+/* 전체 설정 */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+/* head */
+/* 방문 전후 링크 텍스트에 대한 설정 */
 a,
 a:link,
 a:visited {
-  color: inherit;
-  text-decoration: none;
+  color: inherit;  /* 글자 색상은 상위 요소의 속성을 상속받음 */
+  text-decoration: none;  /* 밑줄 없음 */
 }
 li {
-  list-style: none;
+  list-style: none;  /* 리스트 요소들의 항목을 꾸미지 않음 */
 }
-
+/* 컨테이너 클래스의 너비와 바깥여백 설정 */
 .container {
   width: 1140px;
   margin: 0 auto;
 }
+
+/* body */
+/* header */
 header {
   position: fixed;
   color: white;
   top: 0;
-  z-index: 1;
+  z-index: 1;  /* 화면의 최상단에 다른 요소들보다 앞에 오도록 배치 */
   width: 100%;
-  padding: 1rem;
+  padding: 1rem;  /* 16px */
 }
 header .container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-between;  /* 로고와 네비게이션박스를 페이지의 좌우 양끝에 배치 */
+  align-items: center;  /* 플렉스 아이템들은 세로축을 기준으로 가운데 정렬 */
   width: 100%;
 }
+/* 헤더 내 네비게이션 요소의 정렬 방식과 내부 여백 설정 */
 header nav ul {
   display: flex;
 }
 header nav ul li {
   padding: 10px;
 }
+/* 헤더 내 버튼 요소들에 대한 설정 */
 header button {
-  background: transparent;
-  border: 0;
-  cursor: pointer;
+  background: transparent;  /* 배경색 투명 */
+  border: 0;  /* 테두리 없음 */
+  cursor: pointer;  /* 버튼 위에 마우스 커서를 올리면 pointer 모양으로 변화 */
 }
-header h1 button {
-  font-size: 2rem;
+header h1 button {  /* 로고 설정*/
+  font-size: 2rem;  /* 글자 크기: 32px */
   font-weight: bold;
   color: white;
 }
-header nav ul li button {
-  font-size: 1.2rem;
+header nav ul li button {  /* 네비게이션 메뉴의 텍스트 설정 */
+  font-size: 1.2rem;  /* 19.2px */
   color: white;
 }
 /* end header */
+/* main */
 main {
   width: 100%;
   height: 100vh;
   color: white;
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url(./images/me.jpg), center center;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+    url(./images/me.jpg), center center;   /* 배경이미지에 검정 배경색을 투명도 80%로 덧씌우고, main 요소의 정중앙에 배치 */
+  background-size: cover;  /* 이미지의 크기는 main 요소를 완전히 덮는 크기 */
+  display: flex;  
+  justify-content: center;  /* main 요소 내의 flex item들과 텍스트를  */
+  align-items: center;  /*  가로세로 중앙에 */
+  text-align: center;  /* 가운데 정렬한다. */
 }
+/* 텍스트별 크기와 바깥여백 속성 지정 */
 main h4 {
-  font-size: 2rem;
+  font-size: 2rem;  /* 32px */
 }
 main h2 {
-  font-size: 3.5rem;
-  margin: 2rem 0;
-  letter-spacing: 3px;
+  font-size: 3.5rem;  /* 56px */
+  margin: 2rem 0;  /* 바깥 여백: 상하 32px, 좌우 0 */
+  letter-spacing: 3px;  /* 자간 */
   font-family: "Varela Round", sans-serif;
 }
 main p {
-  max-width: 500px;
-  margin: 0 auto;
-  font-size: 1.25rem;
+  max-width: 500px;  /* 최대 너비 */
+  margin: 0 auto;  /* 바깥 여백: 상하 0, 좌우 자동 */
+  font-size: 1.25rem;  /* 20px */
 }
-main button.download {
-  background-color: transparent;
+/* 버튼의 속성 지정 */
+main button.download {  /* 'DOWNLOAD CV'로 표시되는 텍스트 버튼에 대한 서식 설정 */
+  background-color: transparent;  /* 배경색 투명 */
   border: 3px solid white;
-  border-radius: 20px;
-  padding: 1rem 2rem;
-  margin-top: 3rem;
+  border-radius: 20px;  /* 버튼 모서리를 둥글게 */
+  padding: 1rem 2rem;  /* 안쪽 여백: 상하 16px, 좌우 32px */
+  margin-top: 3rem;  /* 위쪽 바깥 여백: 48px */
   color: white;
   font-weight: bold;
   cursor: pointer;
 }
-main button.mouse {
+main button.mouse {  /* 아이콘 형태의 버튼에 대한 서식 설정 */
   background-color: transparent;
   border: none;
   color: white;
-  font-size: 2rem;
-  position: absolute;
+  font-size: 2rem;  /* 32px */
+  position: absolute;  /* 위치 설정 */
   bottom: 1rem;
   left: 50%;
-  transform: translateX(-50%);
-  animation: upDown 1s ease-in-out infinite;
+  transform: translateX(-50%);  /* #main .container의 가로 기준 중앙에 배치한다.  */
+  animation: upDown 1s ease-in-out infinite;  /* 1초 간격으로 위아래로 움직이는 애니메이션 속성을 준다. */
   cursor: pointer;
 }
-@keyframes upDown {
-  0% {
+@keyframes upDown {  /* main button.mouse의 애니메이션 동작에 대한 세부 설정 */
+  0% {    /* main .container의 하단에서부터 16px - 24px - 16px의 간격을 오가며 동작 */
     bottom: 1rem;
   }
   50% {
@@ -113,13 +123,14 @@ main button.mouse {
     bottom: 1rem;
   }
 }
-main h2 span::after {
+/* 메인 화면 텍스트 끝에 커서가 깜빡이는 모양 구현 */
+main h2 span::after {  /* 텍스트 마지막에 막대 삽입 */
   content: "";
   height: 40px;
   width: 3px;
   background-color: #fff;
   display: inline-block;
-  animation: blink 0.7s ease-in-out infinite;
+  animation: blink 0.7s ease-in-out infinite;  /* 0.7초 간격으로 깜빡이는 애니메이션 속성을 준다. */
 }
 @keyframes blink {
   0% {
@@ -130,67 +141,77 @@ main h2 span::after {
   }
 }
 /* end main */
+/* 섹션 영역에 대한 공통 속성 */
 section{
   font-family: "Poppins", sans-serif;
-  padding: 5rem 0;
+  padding: 5rem 0;  /* 안쪽 여백: 상하 80px */
 }
-section:nth-child(2n){
+section:nth-child(2n){  /* 짝수 번째의 섹션마다 배경색 */
   background-color: #f8f8f8;
 }
-
+/* 섹션 제목 영역의 텍스트 서식 */
 section .title{
-  margin-bottom: 3rem;
+  margin-bottom: 3rem;  /* 하단 바깥여백: 48px */
 }
 section .title h4{
-  font-size: 1.35rem;
+  font-size: 1.35rem;  /* 21.6px */
   color: #ed4848;
   position: relative;
 }
 section .title h2{
-  font-size: 3.5rem;
+  font-size: 3.5rem;  /* 56px */
 }
 section .title p{
-  font-size: 1.15rem;
+  font-size: 1.15rem;  /* 18.4px */
 }
+/* #about 섹션의 본문 영역 */
+/* float 속성을 해제한다. */
 section .about-self::after{
   content: "";
   clear: both;
   display: block;
 }
+/* .about-self 클래스의 본문 영역 */
+/* 좌우를 동일한 너비로 양분하여
+왼쪽 영역을 .left, 오른쪽 영역을 .right 클래스로 지정한다. */
 section .about-self .left{
   width: 50%;
   float: left;
 }
-section .about-self .left img{
+section .about-self .left img{  /* .left 클래스에 이미지를 꽉 채워 삽입 */
   max-width: 100%;
 }
-section .about-self .right{
+section .about-self .right{  /* .right 클래스에 안쪽 여백 지정 */
   width: 50%;
   float: left;
-  padding: 0 2rem;
+  padding: 0 2rem;  /* 안쪽 여백: 좌우 32px */
 }
+/* .right 클래스 내 텍스트들에 서식 지정 */
 section .about-self .right h3{
-  font-size: 2.25rem;
-  margin-bottom: 1rem;
+  font-size: 2.25rem;  /* 36px */
+  margin-bottom: 1rem;  /* 하단 바깥여백: 16px */
 }
-section .about-self .right h3 strong{
+section .about-self .right h3 strong{  /* 강조색 설정 */
   color: #ed4848;
 }
 section .about-self .right p{
-  font-size: 1.15rem;
-  margin: 1rem 0;
+  font-size: 1.15rem;/* 18.4px */
+  margin: 1rem 0;  /* 바깥여백: 상하 16px */
 }
+/* sns 페이지로 이동을 안내하는 아이콘들의 크기 설정 */
 section .about-self .right .social a{
-  font-size: 2.5rem;
-  margin-right: 0.2rem;
+  font-size: 2.5rem;  /* 40px */
+  margin-right: 0.2rem;  /* 우측 바깥여백 3.2px */
 }
 /* end section #about */
+/* #features 섹션에 대한 설정 */
+/* 하위의 .do-inner 클래스들을 수평으로 배치 */
 section .do-me::after{
   content: "";
   display: block;
   clear: both;
 }
-section .do-me .do-inner{
+section .do-me .do-inner{  /* 사각형 크기와 간격, 내부 여백 설정 */
   background-color: #fff;
   width: 30%;
   padding: 2rem;
