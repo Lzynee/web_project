@@ -15,8 +15,10 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- start of body/header -->
     <header>
       <div class="container">
+        <!-- 페이지 좌측 상단 모서리의 페이지 로고 및 네비게이터 => 위치 상단으로 고정 -->
         <h1><button>SU</button></h1>
         <nav>
           <ul>
@@ -28,7 +30,7 @@
         </nav>
       </div>
     </header>
-    <!-- end Header -->
+    <!-- end of Header -->
     <!-- main -->
     <main id="main">
       <div class="container">
@@ -39,13 +41,15 @@
           soluta?
         </p>
         <button class="download">DOWNLOAD CV</button>
+        <!-- 마우스 아이콘 모양의 버튼 => 위아래로 바운스하는 애니메이션 적용 -->
         <button class="mouse">
           <i class="fa-solid fa-computer-mouse"></i>
         </button>
       </div>
     </main>
-    <!-- end main -->
+    <!-- end of main -->
     <!-- section #about -->
+    <!-- 좌측에 사진, 우측에 간단한 소개말 -->
     <section id="about" class="about">
       <div class="container">
         <div class="title">
@@ -79,7 +83,7 @@
         </div>
       </div>
     </section>
-    <!-- end section #about -->
+    <!-- end of section #about -->
     <!-- section #features -->
     <section id="features" class="do">
       <div class="container">
@@ -124,7 +128,7 @@
         </div>
       </div>
     </section>
-    <!-- end section #features -->
+    <!-- end of section #features -->
     <div class="bg"></div>
     <!-- section #portfolio -->
     <section id="portfolio" class="portfolio">
@@ -135,37 +139,107 @@
         </div>
         <div class="portfolio-me">
           <div class="portfolio-inner">
-            <img src="./images/mock1.png" alt="�����̹���" />
+            <img src="./images/mock1.png" alt="샘플이미지" />
             <strong>BRANDING</strong>
             <h3>Package Design</h3>
           </div>
           <div class="portfolio-inner">
-            <img src="./images/mock2.png" alt="�����̹���" />
+            <img src="./images/mock2.png" alt="샘플이미지" />
             <strong>DEVELOPMENT</strong>
             <h3>Tablet App Dev</h3>
           </div>
           <div class="portfolio-inner">
-            <img src="./images/mock3.png" alt="�����̹���" />
+            <img src="./images/mock3.png" alt="샘플이미지" />
             <strong>MARKETING</strong>
             <h3>Coka Cola</h3>
           </div>
           <div class="portfolio-inner">
-            <img src="./images/mock4.png" alt="�����̹���" />
+            <img src="./images/mock4.png" alt="샘플이미지" />
             <strong>APP</strong>
             <h3>FaceBook Clone</h3>
           </div>
           <div class="portfolio-inner">
-            <img src="./images/mock5.png" alt="�����̹���" />
+            <img src="./images/mock5.png" alt="샘플이미지" />
             <strong>APP</strong>
             <h3>Netflix Clone</h3>
           </div>
           <div class="portfolio-inner">
-            <img src="./images/mock6.png" alt="�����̹���" />
+            <img src="./images/mock6.png" alt="샘플이미지" />
             <strong>WEB</strong>
             <h3>FirmBee Web</h3>
           </div>
         </div>
       </div>
     </section>
+    <!-- ! end of section #portfolio -->
+    <!-- section #contacct -->
+    <!-- 영역 제목 -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="title">
+          <h4>CONTACT</h4>
+          <h2>Contact With Me</h2>
+        </div>
+        <!-- 영역 본문 -->
+        <div class="contact-me">
+          <!-- 영역 본문의 왼쪽: 연락처 -->
+          <div class="left">
+            <!-- 카드 1: 전화번호 -->
+            <div class="card">
+              <div class="icon">
+                <i class="fa-solid fa-phone-volume"></i>
+              </div>
+              <div class="info-text">
+                <h3>phone</h3>
+                <p>010-2222-1111</p>
+              </div>
+            </div>
+            <!-- 카드 2: 이메일 주소 -->
+            <div class="card">
+              <div class="icon">
+                <i class="fa-solid fa-phone-volume"></i>
+              </div>
+              <div class="info-text">
+                <h3>email</h3>
+                <p>myaddress@mycompany.com</p>
+              </div>
+            </div>
+            <!-- 카드 3: 주소 -->
+            <div class="card">
+              <div class="icon">
+                <i class="fa-solid fa-phone-volume"></i>
+              </div>
+              <div class="info-text">
+                <h3>address</h3>
+                <p>Geumcheon-gu, Seoul, Republic of Korea</p>
+              </div>
+            </div>
+          </div>
+          <!-- 영역 본문의 오른쪽: 입력 양식 폼 -->
+          <div class="right">
+            <form action="#">
+              <!-- 인풋 영역 1: 이름 -->
+              <div class="form-group">
+                <label for="name">name</label>
+                <input type="text" id="name" />
+              </div>
+              <!-- 인풋 영역 2: 이메일 주소 -->
+              <div class="form-group">
+                <label for="email">email</label>
+                <input type="text" id="email" />
+              </div>
+              <!-- 인풋 영역 3: 메시지 -->
+              <div class="form-group">
+                <label for="msg">message</label>
+                <textarea id="msg"></textarea>
+              </div>
+              <!-- 폼의 마지막 (최하단) - 제출 버튼 -->
+              <button type="submit">send</button>              
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of section #contact -->
   </body>
 </html>

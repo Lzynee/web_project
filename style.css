@@ -1,22 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Varela+Round&display=swap");
-/* ÀüÃ¼ ¼³Á¤ */
+/* ì „ì²´ ì„¤ì • */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 /* head */
-/* ¹æ¹® ÀüÈÄ ¸µÅ© ÅØ½ºÆ®¿¡ ´ëÇÑ ¼³Á¤ */
+/* ë°©ë¬¸ ì „í›„ ë§í¬ í…ìŠ¤íŠ¸ì— ëŒ€í•œ ì„¤ì • */
 a,
 a:link,
 a:visited {
-  color: inherit;  /* ±ÛÀÚ »ö»óÀº »óÀ§ ¿ä¼ÒÀÇ ¼Ó¼ºÀ» »ó¼Ó¹ŞÀ½ */
-  text-decoration: none;  /* ¹ØÁÙ ¾øÀ½ */
+  color: inherit;  /* ê¸€ì ìƒ‰ìƒì€ ìƒìœ„ ìš”ì†Œì˜ ì†ì„±ì„ ìƒì†ë°›ìŒ */
+  text-decoration: none;  /* ë°‘ì¤„ ì—†ìŒ */
 }
 li {
-  list-style: none;  /* ¸®½ºÆ® ¿ä¼ÒµéÀÇ Ç×¸ñÀ» ²Ù¹ÌÁö ¾ÊÀ½ */
+  list-style: none;  /* ë¦¬ìŠ¤íŠ¸ ìš”ì†Œë“¤ì˜ í•­ëª©ì„ ê¾¸ë¯¸ì§€ ì•ŠìŒ */
 }
-/* ÄÁÅ×ÀÌ³Ê Å¬·¡½ºÀÇ ³Êºñ¿Í ¹Ù±ù¿©¹é ¼³Á¤ */
+/* ì»¨í…Œì´ë„ˆ í´ë˜ìŠ¤ì˜ ë„ˆë¹„ì™€ ë°”ê¹¥ì—¬ë°± ì„¤ì • */
 .container {
   width: 1140px;
   margin: 0 auto;
@@ -28,35 +28,35 @@ header {
   position: fixed;
   color: white;
   top: 0;
-  z-index: 1;  /* È­¸éÀÇ ÃÖ»ó´Ü¿¡ ´Ù¸¥ ¿ä¼Òµéº¸´Ù ¾Õ¿¡ ¿Àµµ·Ï ¹èÄ¡ */
+  z-index: 1;  /* í™”ë©´ì˜ ìµœìƒë‹¨ì— ë‹¤ë¥¸ ìš”ì†Œë“¤ë³´ë‹¤ ì•ì— ì˜¤ë„ë¡ ë°°ì¹˜ */
   width: 100%;
   padding: 1rem;  /* 16px */
 }
 header .container {
   display: flex;
-  justify-content: space-between;  /* ·Î°í¿Í ³×ºñ°ÔÀÌ¼Ç¹Ú½º¸¦ ÆäÀÌÁöÀÇ ÁÂ¿ì ¾ç³¡¿¡ ¹èÄ¡ */
-  align-items: center;  /* ÇÃ·º½º ¾ÆÀÌÅÛµéÀº ¼¼·ÎÃàÀ» ±âÁØÀ¸·Î °¡¿îµ¥ Á¤·Ä */
+  justify-content: space-between;  /* ë¡œê³ ì™€ ë„¤ë¹„ê²Œì´ì…˜ë°•ìŠ¤ë¥¼ í˜ì´ì§€ì˜ ì¢Œìš° ì–‘ëì— ë°°ì¹˜ */
+  align-items: center;  /* í”Œë ‰ìŠ¤ ì•„ì´í…œë“¤ì€ ì„¸ë¡œì¶•ì„ ê¸°ì¤€ìœ¼ë¡œ ê°€ìš´ë° ì •ë ¬ */
   width: 100%;
 }
-/* Çì´õ ³» ³×ºñ°ÔÀÌ¼Ç ¿ä¼ÒÀÇ Á¤·Ä ¹æ½Ä°ú ³»ºÎ ¿©¹é ¼³Á¤ */
+/* í—¤ë” ë‚´ ë„¤ë¹„ê²Œì´ì…˜ ìš”ì†Œì˜ ì •ë ¬ ë°©ì‹ê³¼ ë‚´ë¶€ ì—¬ë°± ì„¤ì • */
 header nav ul {
   display: flex;
 }
 header nav ul li {
   padding: 10px;
 }
-/* Çì´õ ³» ¹öÆ° ¿ä¼Òµé¿¡ ´ëÇÑ ¼³Á¤ */
+/* í—¤ë” ë‚´ ë²„íŠ¼ ìš”ì†Œë“¤ì— ëŒ€í•œ ì„¤ì • */
 header button {
-  background: transparent;  /* ¹è°æ»ö Åõ¸í */
-  border: 0;  /* Å×µÎ¸® ¾øÀ½ */
-  cursor: pointer;  /* ¹öÆ° À§¿¡ ¸¶¿ì½º Ä¿¼­¸¦ ¿Ã¸®¸é pointer ¸ğ¾çÀ¸·Î º¯È­ */
+  background: transparent;  /* ë°°ê²½ìƒ‰ íˆ¬ëª… */
+  border: 0;  /* í…Œë‘ë¦¬ ì—†ìŒ */
+  cursor: pointer;  /* ë²„íŠ¼ ìœ„ì— ë§ˆìš°ìŠ¤ ì»¤ì„œë¥¼ ì˜¬ë¦¬ë©´ pointer ëª¨ì–‘ìœ¼ë¡œ ë³€í™” */
 }
-header h1 button {  /* ·Î°í ¼³Á¤*/
-  font-size: 2rem;  /* ±ÛÀÚ Å©±â: 32px */
+header h1 button {  /* ë¡œê³  ì„¤ì •*/
+  font-size: 2rem;  /* ê¸€ì í¬ê¸°: 32px */
   font-weight: bold;
   color: white;
 }
-header nav ul li button {  /* ³×ºñ°ÔÀÌ¼Ç ¸Ş´ºÀÇ ÅØ½ºÆ® ¼³Á¤ */
+header nav ul li button {  /* ë„¤ë¹„ê²Œì´ì…˜ ë©”ë‰´ì˜ í…ìŠ¤íŠ¸ ì„¤ì • */
   font-size: 1.2rem;  /* 19.2px */
   color: white;
 }
@@ -67,53 +67,53 @@ main {
   height: 100vh;
   color: white;
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url(./images/me.jpg), center center;   /* ¹è°æÀÌ¹ÌÁö¿¡ °ËÁ¤ ¹è°æ»öÀ» Åõ¸íµµ 80%·Î µ¡¾º¿ì°í, main ¿ä¼ÒÀÇ Á¤Áß¾Ó¿¡ ¹èÄ¡ */
-  background-size: cover;  /* ÀÌ¹ÌÁöÀÇ Å©±â´Â main ¿ä¼Ò¸¦ ¿ÏÀüÈ÷ µ¤´Â Å©±â */
+    url(./images/me.jpg), center center;   /* ë°°ê²½ì´ë¯¸ì§€ì— ê²€ì • ë°°ê²½ìƒ‰ì„ íˆ¬ëª…ë„ 80%ë¡œ ë§ì”Œìš°ê³ , main ìš”ì†Œì˜ ì •ì¤‘ì•™ì— ë°°ì¹˜ */
+  background-size: cover;  /* ì´ë¯¸ì§€ì˜ í¬ê¸°ëŠ” main ìš”ì†Œë¥¼ ì™„ì „íˆ ë®ëŠ” í¬ê¸° */
   display: flex;  
-  justify-content: center;  /* main ¿ä¼Ò ³»ÀÇ flex itemµé°ú ÅØ½ºÆ®¸¦  */
-  align-items: center;  /*  °¡·Î¼¼·Î Áß¾Ó¿¡ */
-  text-align: center;  /* °¡¿îµ¥ Á¤·ÄÇÑ´Ù. */
+  justify-content: center;  /* main ìš”ì†Œ ë‚´ì˜ flex itemë“¤ê³¼ í…ìŠ¤íŠ¸ë¥¼  */
+  align-items: center;  /*  ê°€ë¡œì„¸ë¡œ ì¤‘ì•™ì— */
+  text-align: center;  /* ê°€ìš´ë° ì •ë ¬í•œë‹¤. */
 }
-/* ÅØ½ºÆ®º° Å©±â¿Í ¹Ù±ù¿©¹é ¼Ó¼º ÁöÁ¤ */
+/* í…ìŠ¤íŠ¸ë³„ í¬ê¸°ì™€ ë°”ê¹¥ì—¬ë°± ì†ì„± ì§€ì • */
 main h4 {
   font-size: 2rem;  /* 32px */
 }
 main h2 {
   font-size: 3.5rem;  /* 56px */
-  margin: 2rem 0;  /* ¹Ù±ù ¿©¹é: »óÇÏ 32px, ÁÂ¿ì 0 */
-  letter-spacing: 3px;  /* ÀÚ°£ */
+  margin: 2rem 0;  /* ë°”ê¹¥ ì—¬ë°±: ìƒí•˜ 32px, ì¢Œìš° 0 */
+  letter-spacing: 3px;  /* ìê°„ */
   font-family: "Varela Round", sans-serif;
 }
 main p {
-  max-width: 500px;  /* ÃÖ´ë ³Êºñ */
-  margin: 0 auto;  /* ¹Ù±ù ¿©¹é: »óÇÏ 0, ÁÂ¿ì ÀÚµ¿ */
+  max-width: 500px;  /* ìµœëŒ€ ë„ˆë¹„ */
+  margin: 0 auto;  /* ë°”ê¹¥ ì—¬ë°±: ìƒí•˜ 0, ì¢Œìš° ìë™ */
   font-size: 1.25rem;  /* 20px */
 }
-/* ¹öÆ°ÀÇ ¼Ó¼º ÁöÁ¤ */
-main button.download {  /* 'DOWNLOAD CV'·Î Ç¥½ÃµÇ´Â ÅØ½ºÆ® ¹öÆ°¿¡ ´ëÇÑ ¼­½Ä ¼³Á¤ */
-  background-color: transparent;  /* ¹è°æ»ö Åõ¸í */
+/* ë²„íŠ¼ì˜ ì†ì„± ì§€ì • */
+main button.download {  /* 'DOWNLOAD CV'ë¡œ í‘œì‹œë˜ëŠ” í…ìŠ¤íŠ¸ ë²„íŠ¼ì— ëŒ€í•œ ì„œì‹ ì„¤ì • */
+  background-color: transparent;  /* ë°°ê²½ìƒ‰ íˆ¬ëª… */
   border: 3px solid white;
-  border-radius: 20px;  /* ¹öÆ° ¸ğ¼­¸®¸¦ µÕ±Û°Ô */
-  padding: 1rem 2rem;  /* ¾ÈÂÊ ¿©¹é: »óÇÏ 16px, ÁÂ¿ì 32px */
-  margin-top: 3rem;  /* À§ÂÊ ¹Ù±ù ¿©¹é: 48px */
+  border-radius: 20px;  /* ë²„íŠ¼ ëª¨ì„œë¦¬ë¥¼ ë‘¥ê¸€ê²Œ */
+  padding: 1rem 2rem;  /* ì•ˆìª½ ì—¬ë°±: ìƒí•˜ 16px, ì¢Œìš° 32px */
+  margin-top: 3rem;  /* ìœ„ìª½ ë°”ê¹¥ ì—¬ë°±: 48px */
   color: white;
   font-weight: bold;
   cursor: pointer;
 }
-main button.mouse {  /* ¾ÆÀÌÄÜ ÇüÅÂÀÇ ¹öÆ°¿¡ ´ëÇÑ ¼­½Ä ¼³Á¤ */
+main button.mouse {  /* ì•„ì´ì½˜ í˜•íƒœì˜ ë²„íŠ¼ì— ëŒ€í•œ ì„œì‹ ì„¤ì • */
   background-color: transparent;
   border: none;
   color: white;
   font-size: 2rem;  /* 32px */
-  position: absolute;  /* À§Ä¡ ¼³Á¤ */
+  position: absolute;  /* ìœ„ì¹˜ ì„¤ì • */
   bottom: 1rem;
   left: 50%;
-  transform: translateX(-50%);  /* #main .containerÀÇ °¡·Î ±âÁØ Áß¾Ó¿¡ ¹èÄ¡ÇÑ´Ù.  */
-  animation: upDown 1s ease-in-out infinite;  /* 1ÃÊ °£°İÀ¸·Î À§¾Æ·¡·Î ¿òÁ÷ÀÌ´Â ¾Ö´Ï¸ŞÀÌ¼Ç ¼Ó¼ºÀ» ÁØ´Ù. */
+  transform: translateX(-50%);  /* #main .containerì˜ ê°€ë¡œ ê¸°ì¤€ ì¤‘ì•™ì— ë°°ì¹˜í•œë‹¤.  */
+  animation: upDown 1s ease-in-out infinite;  /* 1ì´ˆ ê°„ê²©ìœ¼ë¡œ ìœ„ì•„ë˜ë¡œ ì›€ì§ì´ëŠ” ì• ë‹ˆë©”ì´ì…˜ ì†ì„±ì„ ì¤€ë‹¤. */
   cursor: pointer;
 }
-@keyframes upDown {  /* main button.mouseÀÇ ¾Ö´Ï¸ŞÀÌ¼Ç µ¿ÀÛ¿¡ ´ëÇÑ ¼¼ºÎ ¼³Á¤ */
-  0% {    /* main .containerÀÇ ÇÏ´Ü¿¡¼­ºÎÅÍ 16px - 24px - 16pxÀÇ °£°İÀ» ¿À°¡¸ç µ¿ÀÛ */
+@keyframes upDown {  /* main button.mouseì˜ ì• ë‹ˆë©”ì´ì…˜ ë™ì‘ì— ëŒ€í•œ ì„¸ë¶€ ì„¤ì • */
+  0% {    /* main .containerì˜ í•˜ë‹¨ì—ì„œë¶€í„° 16px - 24px - 16pxì˜ ê°„ê²©ì„ ì˜¤ê°€ë©° ë™ì‘ */
     bottom: 1rem;
   }
   50% {
@@ -123,14 +123,14 @@ main button.mouse {  /* ¾ÆÀÌÄÜ ÇüÅÂÀÇ ¹öÆ°¿¡ ´ëÇÑ ¼­½Ä ¼³Á¤ */
     bottom: 1rem;
   }
 }
-/* ¸ŞÀÎ È­¸é ÅØ½ºÆ® ³¡¿¡ Ä¿¼­°¡ ±ôºıÀÌ´Â ¸ğ¾ç ±¸Çö */
-main h2 span::after {  /* ÅØ½ºÆ® ¸¶Áö¸·¿¡ ¸·´ë »ğÀÔ */
+/* ë©”ì¸ í™”ë©´ í…ìŠ¤íŠ¸ ëì— ì»¤ì„œê°€ ê¹œë¹¡ì´ëŠ” ëª¨ì–‘ êµ¬í˜„ */
+main h2 span::after {  /* í…ìŠ¤íŠ¸ ë§ˆì§€ë§‰ì— ë§‰ëŒ€ ì‚½ì… */
   content: "";
   height: 40px;
   width: 3px;
   background-color: #fff;
   display: inline-block;
-  animation: blink 0.7s ease-in-out infinite;  /* 0.7ÃÊ °£°İÀ¸·Î ±ôºıÀÌ´Â ¾Ö´Ï¸ŞÀÌ¼Ç ¼Ó¼ºÀ» ÁØ´Ù. */
+  animation: blink 0.7s ease-in-out infinite;  /* 0.7ì´ˆ ê°„ê²©ìœ¼ë¡œ ê¹œë¹¡ì´ëŠ” ì• ë‹ˆë©”ì´ì…˜ ì†ì„±ì„ ì¤€ë‹¤. */
 }
 @keyframes blink {
   0% {
@@ -141,17 +141,17 @@ main h2 span::after {  /* ÅØ½ºÆ® ¸¶Áö¸·¿¡ ¸·´ë »ğÀÔ */
   }
 }
 /* end main */
-/* ¼½¼Ç ¿µ¿ª¿¡ ´ëÇÑ °øÅë ¼Ó¼º */
+/* ì„¹ì…˜ ì˜ì—­ì— ëŒ€í•œ ê³µí†µ ì†ì„± */
 section{
   font-family: "Poppins", sans-serif;
-  padding: 5rem 0;  /* ¾ÈÂÊ ¿©¹é: »óÇÏ 80px */
+  padding: 5rem 0;  /* ì•ˆìª½ ì—¬ë°±: ìƒí•˜ 80px */
 }
-section:nth-child(2n){  /* Â¦¼ö ¹øÂ°ÀÇ ¼½¼Ç¸¶´Ù ¹è°æ»ö */
+section:nth-child(2n){  /* ì§ìˆ˜ ë²ˆì§¸ì˜ ì„¹ì…˜ë§ˆë‹¤ ë°°ê²½ìƒ‰ */
   background-color: #f8f8f8;
 }
-/* ¼½¼Ç Á¦¸ñ ¿µ¿ªÀÇ ÅØ½ºÆ® ¼­½Ä */
+/* ì„¹ì…˜ ì œëª© ì˜ì—­ì˜ í…ìŠ¤íŠ¸ ì„œì‹ */
 section .title{
-  margin-bottom: 3rem;  /* ÇÏ´Ü ¹Ù±ù¿©¹é: 48px */
+  margin-bottom: 3rem;  /* í•˜ë‹¨ ë°”ê¹¥ì—¬ë°±: 48px */
 }
 section .title h4{
   font-size: 1.35rem;  /* 21.6px */
@@ -164,54 +164,54 @@ section .title h2{
 section .title p{
   font-size: 1.15rem;  /* 18.4px */
 }
-/* #about ¼½¼ÇÀÇ º»¹® ¿µ¿ª */
-/* float ¼Ó¼ºÀ» ÇØÁ¦ÇÑ´Ù. */
+/* #about ì„¹ì…˜ì˜ ë³¸ë¬¸ ì˜ì—­ */
+/* float ì†ì„±ì„ í•´ì œí•œë‹¤. */
 section .about-self::after{
   content: "";
   clear: both;
   display: block;
 }
-/* .about-self Å¬·¡½ºÀÇ º»¹® ¿µ¿ª */
-/* ÁÂ¿ì¸¦ µ¿ÀÏÇÑ ³Êºñ·Î ¾çºĞÇÏ¿©
-¿ŞÂÊ ¿µ¿ªÀ» .left, ¿À¸¥ÂÊ ¿µ¿ªÀ» .right Å¬·¡½º·Î ÁöÁ¤ÇÑ´Ù. */
+/* .about-self í´ë˜ìŠ¤ì˜ ë³¸ë¬¸ ì˜ì—­ */
+/* ì¢Œìš°ë¥¼ ë™ì¼í•œ ë„ˆë¹„ë¡œ ì–‘ë¶„í•˜ì—¬
+ì™¼ìª½ ì˜ì—­ì„ .left, ì˜¤ë¥¸ìª½ ì˜ì—­ì„ .right í´ë˜ìŠ¤ë¡œ ì§€ì •í•œë‹¤. */
 section .about-self .left{
   width: 50%;
   float: left;
 }
-section .about-self .left img{  /* .left Å¬·¡½º¿¡ ÀÌ¹ÌÁö¸¦ ²Ë Ã¤¿ö »ğÀÔ */
+section .about-self .left img{  /* .left í´ë˜ìŠ¤ì— ì´ë¯¸ì§€ë¥¼ ê½‰ ì±„ì›Œ ì‚½ì… */
   max-width: 100%;
 }
-section .about-self .right{  /* .right Å¬·¡½º¿¡ ¾ÈÂÊ ¿©¹é ÁöÁ¤ */
+section .about-self .right{  /* .right í´ë˜ìŠ¤ì— ì•ˆìª½ ì—¬ë°± ì§€ì • */
   width: 50%;
   float: left;
-  padding: 0 2rem;  /* ¾ÈÂÊ ¿©¹é: ÁÂ¿ì 32px */
+  padding: 0 2rem;  /* ì•ˆìª½ ì—¬ë°±: ì¢Œìš° 32px */
 }
-/* .right Å¬·¡½º ³» ÅØ½ºÆ®µé¿¡ ¼­½Ä ÁöÁ¤ */
+/* .right í´ë˜ìŠ¤ ë‚´ í…ìŠ¤íŠ¸ë“¤ì— ì„œì‹ ì§€ì • */
 section .about-self .right h3{
   font-size: 2.25rem;  /* 36px */
-  margin-bottom: 1rem;  /* ÇÏ´Ü ¹Ù±ù¿©¹é: 16px */
+  margin-bottom: 1rem;  /* í•˜ë‹¨ ë°”ê¹¥ì—¬ë°±: 16px */
 }
-section .about-self .right h3 strong{  /* °­Á¶»ö ¼³Á¤ */
+section .about-self .right h3 strong{  /* ê°•ì¡°ìƒ‰ ì„¤ì • */
   color: #ed4848;
 }
 section .about-self .right p{
   font-size: 1.15rem;/* 18.4px */
-  margin: 1rem 0;  /* ¹Ù±ù¿©¹é: »óÇÏ 16px */
+  margin: 1rem 0;  /* ë°”ê¹¥ì—¬ë°±: ìƒí•˜ 16px */
 }
-/* sns ÆäÀÌÁö·Î ÀÌµ¿À» ¾È³»ÇÏ´Â ¾ÆÀÌÄÜµéÀÇ Å©±â ¼³Á¤ */
+/* sns í˜ì´ì§€ë¡œ ì´ë™ì„ ì•ˆë‚´í•˜ëŠ” ì•„ì´ì½˜ë“¤ì˜ í¬ê¸° ì„¤ì • */
 section .about-self .right .social a{
   font-size: 2.5rem;  /* 40px */
-  margin-right: 0.2rem;  /* ¿ìÃø ¹Ù±ù¿©¹é 3.2px */
+  margin-right: 0.2rem;  /* ìš°ì¸¡ ë°”ê¹¥ì—¬ë°± 3.2px */
 }
 /* end section #about */
-/* #features ¼½¼Ç¿¡ ´ëÇÑ ¼³Á¤ */
-/* ÇÏÀ§ÀÇ .do-inner Å¬·¡½ºµéÀ» ¼öÆòÀ¸·Î ¹èÄ¡ */
+/* #features ì„¹ì…˜ì— ëŒ€í•œ ì„¤ì • */
+/* í•˜ìœ„ì˜ .do-inner í´ë˜ìŠ¤ë“¤ì„ ìˆ˜í‰ìœ¼ë¡œ ë°°ì¹˜ */
 section .do-me::after{
   content: "";
   display: block;
   clear: both;
 }
-section .do-me .do-inner{  /* »ç°¢Çü Å©±â¿Í °£°İ, ³»ºÎ ¿©¹é ¼³Á¤ */
+section .do-me .do-inner{  /* ì‚¬ê°í˜• í¬ê¸°ì™€ ê°„ê²©, ë‚´ë¶€ ì—¬ë°± ì„¤ì • */
   background-color: #fff;
   width: 30%;
   padding: 2rem;
@@ -276,4 +276,89 @@ section.portfolio .portfolio-inner strong{
 }
 section.portfolio .portfolio-inner h3{
   font-size: 1.75rem;
+}
+
+/* section #contact */
+/* ë³¸ë¬¸ ì˜ì—­ ë ˆì´ì•„ì›ƒ*/
+section.contact .contact-me::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+/* ë³¸ë¬¸ ì™¼ìª½ 30%, ì˜¤ë¥¸ìª½ 65% ë„ˆë¹„, ê°„ê²© 5% */
+section.contact .contact-me .left{
+  width: 30%;
+  float: left;
+}
+section.contact .contact-me .right{
+  float: left;
+  width: 65%;
+  margin-left: 5%;
+}
+/* ë³¸ë¬¸ ì™¼ìª½ .card ê·¸ë£¹ */
+section.contact .contact-me .left .card{
+  border: 1px solid #ccc;
+  padding: 1rem;  /* ì•ˆìª½ì—¬ë°± 16px */
+  display: flex;  /* ì•„ì´ì½˜ ì˜ì—­ê³¼ í…ìŠ¤íŠ¸ ì˜ì—­ì„ ìˆ˜í‰ìœ¼ë¡œ ë‚˜ë€íˆ ë°°ì¹˜ */
+  align-items: center;  /* ì¹´ë“œ ë‚´ë¬´ ìš”ì†ŒëŠ” ìˆ˜ì§ ë°©í–¥ìœ¼ë¡œ ì¤‘ì•™ì— ë°°ì¹˜ */
+  margin-bottom: 1.25rem;  /* ì•„ë˜ìª½ ë°”ê¹¥ì—¬ë°± 20px */
+}
+/* ë³¸ë¬¸ ì™¼ìª½ ì•„ì´ì½˜ í°íŠ¸ ë„ˆë¹„ ì„¤ì • */
+section.contact .contact-me .left .card .icon i{
+  font-size: 2rem;  /* 32px */
+  margin-right: 15px;
+}
+/* ë³¸ë¬¸ ì˜¤ë¥¸ìª½ ì˜ì—­ */
+section.contact .contact-me .right{
+  float: left;
+  width: 65%;
+  margin-left: 5%;
+  margin-bottom: 2rem;
+  border: 1px solid #ccc;
+  padding: 1rem;
+}
+/* í¼ ìš”ì†Œ ì†ì„± ì§€ì • */
+/* form-group ì‚¬ì´ ê°„ê²© ì§€ì • */
+section.contact .contact-me .right .form-group{
+  margin-bottom: 1.25rem;
+}
+/* label íƒœê·¸ì— ì™¸ë¶€ ì—¬ë°± ì ìš© */
+section.contact .contact-me .right .form-group label{
+  display: block;
+  margin-bottom: 0.85rem;  /* 13.6px */
+}
+/* input ìš”ì†Œ ê¾¸ë¯¸ê¸° */
+section.contact .contact-me .right .form-group input{
+  padding: 0.625rem;  /* 10px */
+  width: 100%;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+/* ì»¤ì„œ í™œì„±í™” ì‹œ íŒŒë€ìƒ‰ í…Œë‘ë¦¬ì™€ ê·¸ë¦¼ì íš¨ê³¼ */
+section.contact .contact-me .right .form-group input:focus{
+  border: 1px solid #719ece;
+  box-shadow: 0 0 10px #719ece;
+}
+/* textarea ìš”ì†Œ ê¾¸ë¯¸ê¸° */
+section.contact .contact-me .right .form-group textarea{
+  height: 300px;
+  width: 100%;
+  resize: none;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+/* ì»¤ì„œ í™œì„±í™” ì‹œ íŒŒë€ìƒ‰ í…Œë‘ë¦¬ì™€ ê·¸ë¦¼ì íš¨ê³¼ */
+section.contact .contact-me .right .form-group textarea:focus{
+  outline: none;
+  border: 1px solid #719ece;
+  box-shadow: 0 0 10px #719ece;
+}
+/* ë²„íŠ¼ ìš”ì†Œ ê¾¸ë¯¸ê¸° */
+section.contact .contact-me .right button{
+  width: 100%;
+  padding: 1rem;
+  background-color: #f78b00;
+  border: none;
+  color: white;
 }
