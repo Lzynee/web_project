@@ -10,11 +10,11 @@
 a,
 a:link,
 a:visited {
-  color: inherit;  /* 글자 색상은 상위 요소의 속성을 상속받음 */
-  text-decoration: none;  /* 밑줄 없음 */
+  color: inherit; /* 글자 색상은 상위 요소의 속성을 상속받음 */
+  text-decoration: none; /* 밑줄 없음 */
 }
 li {
-  list-style: none;  /* 리스트 요소들의 항목을 꾸미지 않음 */
+  list-style: none; /* 리스트 요소들의 항목을 꾸미지 않음 */
 }
 /* 컨테이너 클래스의 너비와 바깥여백 설정 */
 .container {
@@ -26,16 +26,16 @@ li {
 /* header */
 header {
   position: fixed;
-  color: white;
+  color: #fff;
   top: 0;
-  z-index: 1;  /* 화면의 최상단에 다른 요소들보다 앞에 오도록 배치 */
+  z-index: 1; /* 화면의 최상단에 다른 요소들보다 앞에 오도록 배치 */
   width: 100%;
-  padding: 1rem;  /* 16px */
+  padding: 1rem; /* 16px */
 }
 header .container {
   display: flex;
-  justify-content: space-between;  /* 로고와 네비게이션박스를 페이지의 좌우 양끝에 배치 */
-  align-items: center;  /* 플렉스 아이템들은 세로축을 기준으로 가운데 정렬 */
+  justify-content: space-between; /* 로고와 네비게이션박스를 페이지의 좌우 양끝에 배치 */
+  align-items: center; /* 플렉스 아이템들은 세로축을 기준으로 가운데 정렬 */
   width: 100%;
 }
 /* 헤더 내 네비게이션 요소의 정렬 방식과 내부 여백 설정 */
@@ -47,73 +47,81 @@ header nav ul li {
 }
 /* 헤더 내 버튼 요소들에 대한 설정 */
 header button {
-  background: transparent;  /* 배경색 투명 */
-  border: 0;  /* 테두리 없음 */
-  cursor: pointer;  /* 버튼 위에 마우스 커서를 올리면 pointer 모양으로 변화 */
+  background: transparent; /* 배경색 투명 */
+  border: 0; /* 테두리 없음 */
+  cursor: pointer; /* 버튼 위에 마우스 커서를 올리면 pointer 모양으로 변화 */
 }
-header h1 button {  /* 로고 설정*/
-  font-size: 2rem;  /* 글자 크기: 32px */
+header h1 button {
+  /* 로고 설정*/
+  font-size: 2rem; /* 글자 크기: 32px */
   font-weight: bold;
-  color: white;
+  color: #fff;
 }
-header nav ul li button {  /* 네비게이션 메뉴의 텍스트 설정 */
-  font-size: 1.2rem;  /* 19.2px */
-  color: white;
+header nav ul li button {
+  /* 네비게이션 메뉴의 텍스트 설정 */
+  font-size: 1.2rem; /* 19.2px */
+  color: #fff;
 }
 /* end header */
 /* main */
 main {
   width: 100%;
   height: 100vh;
-  color: white;
+  color: #fff;
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url(./images/me.jpg), center center;   /* 배경이미지에 검정 배경색을 투명도 80%로 덧씌우고, main 요소의 정중앙에 배치 */
-  background-size: cover;  /* 이미지의 크기는 main 요소를 완전히 덮는 크기 */
-  display: flex;  
-  justify-content: center;  /* main 요소 내의 flex item들과 텍스트를  */
-  align-items: center;  /*  가로세로 중앙에 */
-  text-align: center;  /* 가운데 정렬한다. */
+    url(./images/me.jpg), center center; /* 배경이미지에 검정 배경색을 투명도 80%로 덧씌우고, main 요소의 정중앙에 배치 */
+  background-size: cover; /* 이미지의 크기는 main 요소를 완전히 덮는 크기 */
+  display: flex;
+  justify-content: center; /* main 요소 내의 flex item들과 텍스트를  */
+  align-items: center; /*  가로세로 중앙에 */
+  text-align: center; /* 가운데 정렬한다. */
 }
 /* 텍스트별 크기와 바깥여백 속성 지정 */
 main h4 {
-  font-size: 2rem;  /* 32px */
+  font-size: 2rem; /* 32px */
 }
 main h2 {
-  font-size: 3.5rem;  /* 56px */
-  margin: 2rem 0;  /* 바깥 여백: 상하 32px, 좌우 0 */
-  letter-spacing: 3px;  /* 자간 */
+  font-size: 3.5rem; /* 56px */
+  margin: 2rem 0; /* 바깥 여백: 상하 32px, 좌우 0 */
+  letter-spacing: 3px; /* 자간 */
   font-family: "Varela Round", sans-serif;
 }
 main p {
-  max-width: 500px;  /* 최대 너비 */
-  margin: 0 auto;  /* 바깥 여백: 상하 0, 좌우 자동 */
-  font-size: 1.25rem;  /* 20px */
+  max-width: 500px; /* 최대 너비 */
+  margin: 0 auto; /* 바깥 여백: 상하 0, 좌우 자동 */
+  font-size: 1.25rem; /* 20px */
 }
 /* 버튼의 속성 지정 */
-main button.download {  /* 'DOWNLOAD CV'로 표시되는 텍스트 버튼에 대한 서식 설정 */
-  background-color: transparent;  /* 배경색 투명 */
-  border: 3px solid white;
-  border-radius: 20px;  /* 버튼 모서리를 둥글게 */
-  padding: 1rem 2rem;  /* 안쪽 여백: 상하 16px, 좌우 32px */
-  margin-top: 3rem;  /* 위쪽 바깥 여백: 48px */
-  color: white;
+main button.download {
+  /* 'DOWNLOAD CV'로 표시되는 텍스트 버튼에 대한 서식 설정 */
+  background-color: transparent; /* 배경색 투명 */
+  border: 3px solid #fff;
+  border-radius: 20px; /* 버튼 모서리를 둥글게 */
+  padding: 1rem 2rem; /* 안쪽 여백: 상하 16px, 좌우 32px */
+  margin-top: 3rem; /* 위쪽 바깥 여백: 48px */
+  color: #fff;
   font-weight: bold;
   cursor: pointer;
 }
-main button.mouse {  /* 아이콘 형태의 버튼에 대한 서식 설정 */
+main button.mouse {
+  /* 아이콘 형태의 버튼에 대한 서식 설정 */
   background-color: transparent;
   border: none;
-  color: white;
-  font-size: 2rem;  /* 32px */
-  position: absolute;  /* 위치 설정 */
+  color: #fff;
+  font-size: 2rem; /* 32px */
+  position: absolute; /* 위치 설정 */
   bottom: 1rem;
   left: 50%;
-  transform: translateX(-50%);  /* #main .container의 가로 기준 중앙에 배치한다.  */
-  animation: upDown 1s ease-in-out infinite;  /* 1초 간격으로 위아래로 움직이는 애니메이션 속성을 준다. */
+  transform: translateX(
+    -50%
+  ); /* #main .container의 가로 기준 중앙에 배치한다.  */
+  animation: upDown 1s ease-in-out infinite; /* 1초 간격으로 위아래로 움직이는 애니메이션 속성을 준다. */
   cursor: pointer;
 }
-@keyframes upDown {  /* main button.mouse의 애니메이션 동작에 대한 세부 설정 */
-  0% {    /* main .container의 하단에서부터 16px - 24px - 16px의 간격을 오가며 동작 */
+@keyframes upDown {
+  /* main button.mouse의 애니메이션 동작에 대한 세부 설정 */
+  0% {
+    /* main .container의 하단에서부터 16px - 24px - 16px의 간격을 오가며 동작 */
     bottom: 1rem;
   }
   50% {
@@ -124,13 +132,14 @@ main button.mouse {  /* 아이콘 형태의 버튼에 대한 서식 설정 */
   }
 }
 /* 메인 화면 텍스트 끝에 커서가 깜빡이는 모양 구현 */
-main h2 span::after {  /* 텍스트 마지막에 막대 삽입 */
+main h2 span::after {
+  /* 텍스트 마지막에 막대 삽입 */
   content: "";
   height: 40px;
   width: 3px;
   background-color: #fff;
   display: inline-block;
-  animation: blink 0.7s ease-in-out infinite;  /* 0.7초 간격으로 깜빡이는 애니메이션 속성을 준다. */
+  animation: blink 0.7s ease-in-out infinite; /* 0.7초 간격으로 깜빡이는 애니메이션 속성을 준다. */
 }
 @keyframes blink {
   0% {
@@ -142,31 +151,32 @@ main h2 span::after {  /* 텍스트 마지막에 막대 삽입 */
 }
 /* end main */
 /* 섹션 영역에 대한 공통 속성 */
-section{
+section {
   font-family: "Poppins", sans-serif;
-  padding: 5rem 0;  /* 안쪽 여백: 상하 80px */
+  padding: 5rem 0; /* 안쪽 여백: 상하 80px */
 }
-section:nth-child(2n){  /* 짝수 번째의 섹션마다 배경색 */
+section:nth-child(2n) {
+  /* 짝수 번째의 섹션마다 배경색 */
   background-color: #f8f8f8;
 }
 /* 섹션 제목 영역의 텍스트 서식 */
-section .title{
-  margin-bottom: 3rem;  /* 하단 바깥여백: 48px */
+section .title {
+  margin-bottom: 3rem; /* 하단 바깥여백: 48px */
 }
-section .title h4{
-  font-size: 1.35rem;  /* 21.6px */
-  color: #ed4848;
+section .title h4 {
+  font-size: 1.35rem; /* 21.6px */
+  color: #3954db;
   position: relative;
 }
-section .title h2{
-  font-size: 3.5rem;  /* 56px */
+section .title h2 {
+  font-size: 3.5rem; /* 56px */
 }
-section .title p{
-  font-size: 1.15rem;  /* 18.4px */
+section .title p {
+  font-size: 1.15rem; /* 18.4px */
 }
 /* #about 섹션의 본문 영역 */
 /* float 속성을 해제한다. */
-section .about-self::after{
+section .about-self::after {
   content: "";
   clear: both;
   display: block;
@@ -174,44 +184,48 @@ section .about-self::after{
 /* .about-self 클래스의 본문 영역 */
 /* 좌우를 동일한 너비로 양분하여
 왼쪽 영역을 .left, 오른쪽 영역을 .right 클래스로 지정한다. */
-section .about-self .left{
+section .about-self .left {
   width: 50%;
   float: left;
 }
-section .about-self .left img{  /* .left 클래스에 이미지를 꽉 채워 삽입 */
+section .about-self .left img {
+  /* .left 클래스에 이미지를 꽉 채워 삽입 */
   max-width: 100%;
 }
-section .about-self .right{  /* .right 클래스에 안쪽 여백 지정 */
+section .about-self .right {
+  /* .right 클래스에 안쪽 여백 지정 */
   width: 50%;
   float: left;
-  padding: 0 2rem;  /* 안쪽 여백: 좌우 32px */
+  padding: 0 2rem; /* 안쪽 여백: 좌우 32px */
 }
 /* .right 클래스 내 텍스트들에 서식 지정 */
-section .about-self .right h3{
-  font-size: 2.25rem;  /* 36px */
-  margin-bottom: 1rem;  /* 하단 바깥여백: 16px */
+section .about-self .right h3 {
+  font-size: 2.25rem; /* 36px */
+  margin-bottom: 1rem; /* 하단 바깥여백: 16px */
 }
-section .about-self .right h3 strong{  /* 강조색 설정 */
-  color: #ed4848;
+section .about-self .right h3 strong {
+  /* 강조색 설정 */
+  color: #3954db;
 }
-section .about-self .right p{
-  font-size: 1.15rem;/* 18.4px */
-  margin: 1rem 0;  /* 바깥여백: 상하 16px */
+section .about-self .right p {
+  font-size: 1.15rem; /* 18.4px */
+  margin: 1rem 0; /* 바깥여백: 상하 16px */
 }
 /* sns 페이지로 이동을 안내하는 아이콘들의 크기 설정 */
-section .about-self .right .social a{
-  font-size: 2.5rem;  /* 40px */
-  margin-right: 0.2rem;  /* 우측 바깥여백 3.2px */
+section .about-self .right .social a {
+  font-size: 2.5rem; /* 40px */
+  margin-right: 0.2rem; /* 우측 바깥여백 3.2px */
 }
 /* end section #about */
 /* #features 섹션에 대한 설정 */
 /* 하위의 .do-inner 클래스들을 수평으로 배치 */
-section .do-me::after{
+section .do-me::after {
   content: "";
   display: block;
   clear: both;
 }
-section .do-me .do-inner{  /* 사각형 크기와 간격, 내부 여백 설정 */
+section .do-me .do-inner {
+  /* 사각형 크기와 간격, 내부 여백 설정 */
   background-color: #fff;
   width: 30%;
   padding: 2rem;
@@ -219,41 +233,41 @@ section .do-me .do-inner{  /* 사각형 크기와 간격, 내부 여백 설정 *
   margin-right: 5%;
   cursor: pointer;
 }
-section .do-me .do-inner:last-child{
+section .do-me .do-inner:last-child {
   margin-right: 0;
 }
-section .do-me .do-inner .icon i{
+section .do-me .do-inner .icon i {
   font-size: 2.5rem;
-  color: #ff6a6a;
+  color: #719ece;
 }
-section .do-me .do-inner .container h3{
+section .do-me .do-inner .container h3 {
   font-size: 2rem;
   margin: 1rem 0;
 }
-section .do-me .do-inner .container p{
+section .do-me .do-inner .container p {
   font-size: 1.15rem;
 }
-section .do-me .do-inner:hover{
-  background-color: lightcoral;
-  color: white;
+section .do-me .do-inner:hover {
+  background-color: #39bbdb;
+  color: #fff;
 }
-section .do-me .do-inner:hover i{
-  color: white;
+section .do-me .do-inner:hover i {
+  color: #fff;
 }
 /* end section #features */
-.bg{
+.bg {
   background: url(./images/background.jpg) center center;
   background-size: cover;
   background-attachment: fixed;
   height: 650px;
 }
 /* end background */
-section.portfolio::after{
+section.portfolio::after {
   content: "";
   display: block;
   clear: both;
 }
-section.portfolio .portfolio-inner{
+section.portfolio .portfolio-inner {
   width: 30%;
   margin-right: 5%;
   padding: 1rem 1rem 1.5rem 1rem;
@@ -262,54 +276,54 @@ section.portfolio .portfolio-inner{
   border: 1px solid #ccc;
   margin-bottom: 3rem;
 }
-section.portfolio .portfolio-inner:nth-child(3n){
+section.portfolio .portfolio-inner:nth-child(3n) {
   margin-right: 0;
 }
-section.portfolio .portfolio-inner img{
+section.portfolio .portfolio-inner img {
   width: 100%;
   display: block;
 }
-section.portfolio .portfolio-inner strong{
-  color: #ff6a6a;
+section.portfolio .portfolio-inner strong {
+  color: #39bbdb;
   margin: 0.5rem 0;
   display: block;
 }
-section.portfolio .portfolio-inner h3{
+section.portfolio .portfolio-inner h3 {
   font-size: 1.75rem;
 }
 
 /* section #contact */
 /* 본문 영역 레이아웃*/
-section.contact .contact-me::after{
+section.contact .contact-me::after {
   content: "";
   display: block;
   clear: both;
 }
 /* 본문 왼쪽 30%, 오른쪽 65% 너비, 간격 5% */
-section.contact .contact-me .left{
+section.contact .contact-me .left {
   width: 30%;
   float: left;
 }
-section.contact .contact-me .right{
+section.contact .contact-me .right {
   float: left;
   width: 65%;
   margin-left: 5%;
 }
 /* 본문 왼쪽 .card 그룹 */
-section.contact .contact-me .left .card{
+section.contact .contact-me .left .card {
   border: 1px solid #ccc;
-  padding: 1rem;  /* 안쪽여백 16px */
-  display: flex;  /* 아이콘 영역과 텍스트 영역을 수평으로 나란히 배치 */
-  align-items: center;  /* 카드 내무 요소는 수직 방향으로 중앙에 배치 */
-  margin-bottom: 1.25rem;  /* 아래쪽 바깥여백 20px */
+  padding: 1rem; /* 안쪽여백 16px */
+  display: flex; /* 아이콘 영역과 텍스트 영역을 수평으로 나란히 배치 */
+  align-items: center; /* 카드 내무 요소는 수직 방향으로 중앙에 배치 */
+  margin-bottom: 1.25rem; /* 아래쪽 바깥여백 20px */
 }
 /* 본문 왼쪽 아이콘 폰트 너비 설정 */
-section.contact .contact-me .left .card .icon i{
-  font-size: 2rem;  /* 32px */
+section.contact .contact-me .left .card .icon i {
+  font-size: 2rem; /* 32px */
   margin-right: 15px;
 }
 /* 본문 오른쪽 영역 */
-section.contact .contact-me .right{
+section.contact .contact-me .right {
   float: left;
   width: 65%;
   margin-left: 5%;
@@ -319,29 +333,29 @@ section.contact .contact-me .right{
 }
 /* 폼 요소 속성 지정 */
 /* form-group 사이 간격 지정 */
-section.contact .contact-me .right .form-group{
+section.contact .contact-me .right .form-group {
   margin-bottom: 1.25rem;
 }
 /* label 태그에 외부 여백 적용 */
-section.contact .contact-me .right .form-group label{
+section.contact .contact-me .right .form-group label {
   display: block;
-  margin-bottom: 0.85rem;  /* 13.6px */
+  margin-bottom: 0.85rem; /* 13.6px */
 }
 /* input 요소 꾸미기 */
-section.contact .contact-me .right .form-group input{
-  padding: 0.625rem;  /* 10px */
+section.contact .contact-me .right .form-group input {
+  padding: 0.625rem; /* 10px */
   width: 100%;
   outline: none;
   border: 1px solid #ccc;
   border-radius: 10px;
 }
 /* 커서 활성화 시 파란색 테두리와 그림자 효과 */
-section.contact .contact-me .right .form-group input:focus{
+section.contact .contact-me .right .form-group input:focus {
   border: 1px solid #719ece;
   box-shadow: 0 0 10px #719ece;
 }
 /* textarea 요소 꾸미기 */
-section.contact .contact-me .right .form-group textarea{
+section.contact .contact-me .right .form-group textarea {
   height: 300px;
   width: 100%;
   resize: none;
@@ -349,16 +363,16 @@ section.contact .contact-me .right .form-group textarea{
   border-radius: 10px;
 }
 /* 커서 활성화 시 파란색 테두리와 그림자 효과 */
-section.contact .contact-me .right .form-group textarea:focus{
+section.contact .contact-me .right .form-group textarea:focus {
   outline: none;
   border: 1px solid #719ece;
   box-shadow: 0 0 10px #719ece;
 }
 /* 버튼 요소 꾸미기 */
-section.contact .contact-me .right button{
+section.contact .contact-me .right button {
   width: 100%;
   padding: 1rem;
-  background-color: #f78b00;
+  background-color: #39db90;
   border: none;
-  color: white;
+  color: #fff;
 }
