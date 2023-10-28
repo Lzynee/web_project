@@ -27,6 +27,7 @@ li {
 header {
   position: fixed;
   color: #fff;
+  background-color: rgba(0, 0, 0, 0.8);
   top: 0;
   z-index: 1; /* 화면의 최상단에 다른 요소들보다 앞에 오도록 배치 */
   width: 100%;
@@ -69,7 +70,7 @@ main {
   height: 100vh;
   color: #fff;
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url(./images/me.jpg), center center; /* 배경이미지에 검정 배경색을 투명도 80%로 덧씌우고, main 요소의 정중앙에 배치 */
+    url(./images/mem.jpg), center center; /* 배경이미지에 검정 배경색을 투명도 80%로 덧씌우고, main 요소의 정중앙에 배치 */
   background-size: cover; /* 이미지의 크기는 main 요소를 완전히 덮는 크기 */
   display: flex;
   justify-content: center; /* main 요소 내의 flex item들과 텍스트를  */
@@ -217,7 +218,7 @@ section .about-self .right .social a {
   margin-right: 0.2rem; /* 우측 바깥여백 3.2px */
 }
 /* end section #about */
-/* #features 섹션에 대한 설정 */
+/* #objectives 섹션에 대한 설정 */
 /* 하위의 .do-inner 클래스들을 수평으로 배치 */
 section .do-me::after {
   content: "";
@@ -239,6 +240,7 @@ section .do-me .do-inner:last-child {
 section .do-me .do-inner .icon i {
   font-size: 2.5rem;
   color: #719ece;
+  margin-right: 1rem;
 }
 section .do-me .do-inner .container h3 {
   font-size: 2rem;
@@ -254,9 +256,9 @@ section .do-me .do-inner:hover {
 section .do-me .do-inner:hover i {
   color: #fff;
 }
-/* end section #features */
+/* end section #objectives */
 .bg {
-  background: url(./images/background.jpg) center center;
+  background: url(./images/backgroundm.jpg) center center;
   background-size: cover;
   background-attachment: fixed;
   height: 650px;
