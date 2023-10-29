@@ -61,5 +61,9 @@ HTML/CSS Part Project - 웹 페이지 만들기
 
 # Reference
 <p>
-  
+  <ul>
+    <p><li>사용 교재: 김기수. 『코딩 자율학습 HTML+CSS+자바스크립트』. 길벗. 2022. </li></p>
+    <p><li>원본 프로젝트 소스: http://github.com/gilbutITbook/080313 </li></p>
+    <p><li>이미지 파일 출처: https://unsplash.com/ko </li></p>
+  </ul>
 </p>
