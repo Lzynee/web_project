@@ -24,6 +24,7 @@
   <img src="https://github.com/Lzynee/web_project/assets/145524819/41c5795d-fa9f-4504-a1e9-a9ba7377c793" width=45%>
   <img src="https://github.com/Lzynee/web_project/assets/145524819/d8d8c816-ef34-4e1a-90dd-1e3e1c67e057" width=45%>
 </p>
+<div align=right> (좌: 원본 프로젝트, 우: 개별화한 결과물) </div>
 <br><br>
 
 
@@ -36,6 +37,7 @@
   <img src="https://github.com/Lzynee/web_project/assets/145524819/10b546a2-481d-4ae4-abd5-dbd36ce09b98" width=45%>
   <img src="https://github.com/Lzynee/web_project/assets/145524819/8e6a57fa-d523-4271-8670-78ac6f6c834a" width=45%>
 </p>
+<div align=right> (좌: 원본 프로젝트, 우: 개별화한 결과물) </div>
 <br><br>
 
 
@@ -47,6 +49,7 @@
   <img src="https://github.com/Lzynee/web_project/assets/145524819/80b1b3e3-3614-4a8f-88f8-be14c3b47f44" width=45%>
   <img src="https://github.com/Lzynee/web_project/assets/145524819/df8140ad-cc8f-4fbe-a385-8343a6c3f2d3" width=45%>
 </p>
+<div align=right> (좌: 원본 프로젝트, 우: 개별화한 결과물) </div>
 <br><br>
 
 
@@ -61,7 +64,7 @@
 
 - 포트폴리오 파트를 현재 역량, 강점이나 관심 분야에 관한 파트로 대체한다.
 - 본 교육과정을 진행하는 동안, 혹은 수료 후 개발한 역량과 포트폴리오를 기반으로 나만의 포트폴리오 파트를 새롭게 추가한다.
-- 내가 구현하고 싶은 개인 페이지의 구조와 내용을 스스로 고안하고, 그에 따라 각 섹션 또는 섹션 내부 요소들을 재배치하는 등, 샘플 프로젝트의 틀로부터 차별화된 결과물을 완성한다.
+- 내가 구현하고 싶은 개인 페이지의 구조와 내용을 스스로 고안하고, 그에 따라 각 섹션 또는 섹션 내부 요소들을 재배치하는 등, 샘플 프로젝트의 틀 자체에서 벗어난 결과물을 완성한다.
 <br><br>
 
 
